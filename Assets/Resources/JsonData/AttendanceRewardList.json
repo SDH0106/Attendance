@@ -114,6 +114,18 @@
     "RewardAmounts": "7"
   },
   {
+    "Month": "00",
+    "Day": "15",
+    "RewardItemIds": "1400000001",
+    "RewardAmounts": "1"
+  },
+  {
+    "Month": "00",
+    "Day": "21",
+    "RewardItemIds": "1400000006",
+    "RewardAmounts": "1"
+  },
+  {
     "Month": "01",
     "Day": "15",
     "RewardItemIds": "1400000001",

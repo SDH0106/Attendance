@@ -5,9 +5,6 @@ using UnityEngine.UI;
 
 public class UIMainLobbyAttendanceElementView : MonoBehaviour
 {
-    [SerializeField] Sprite attendanceDefaultSprite;
-    [SerializeField] Sprite attendanceTodaySprite;
-
     int elementIndex;
 
     Image elementSlotImage;
@@ -22,6 +19,8 @@ public class UIMainLobbyAttendanceElementView : MonoBehaviour
 
     int maxDate;
 
+    Color normalSlotColor = new Color(0.75f, 0.75f, 0.75f, 1);
+
     public void OnLoadComponents()
     {
         elementSlotImage = GetComponent<Image>();
@@ -33,7 +32,7 @@ public class UIMainLobbyAttendanceElementView : MonoBehaviour
 
     public void Initialize(int todayAttendanceLevel, int elementIndex, int maxDate)
     {
-        int currentMonth = DateTime.Now.Month;
+        int currentMonth = GameData.DummyTime.Month;
         this.elementIndex = elementIndex;
         this.todayAttendanceLevel = todayAttendanceLevel;
         this.maxDate = maxDate;
@@ -43,7 +42,7 @@ public class UIMainLobbyAttendanceElementView : MonoBehaviour
         if (reward == null)
             reward = GameData.Instance.AttendanceRewards.Find(x => x.month == 0 && x.day == elementIndex + 1);
 
-        elementSlotImage.sprite = todayAttendanceLevel == elementIndex ? attendanceTodaySprite : attendanceDefaultSprite;
+        elementSlotImage.color = todayAttendanceLevel == elementIndex ? Color.cyan : normalSlotColor;
         dateText.text = (elementIndex + 1).ToString();
 
         for (int i = 0; i < reward.items.Length; ++i)

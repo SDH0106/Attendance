@@ -9,7 +9,7 @@ public class GameData
 {
     static GameData _instance;
     public const int MaxRestPoint = 300;
-    public static DateTime DummyTime;
+    public static DateTime DummyTime = DateTime.Now;
 
     public static string EventCode
     {

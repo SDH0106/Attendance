@@ -85,13 +85,13 @@ public class UIMainLobbyAttendancePanelView : MonoBehaviour
 
     private void Update()
     {
-        if (panelOnUpdateTime.Day != DateTime.Now.Day)
+        if (panelOnUpdateTime.Day != GameData.DummyTime.Day)
             OnUpdatePanel();
     }
 
     void OnUpdatePanel()
     {
-        panelOnUpdateTime = DateTime.Now;
+        panelOnUpdateTime = GameData.DummyTime;
         User.Instance.ResetAttendanceIfMonthChanged();
 
         todayAttendanceLevel = !User.Instance.IsReceivedAttendanceToday() ? User.Instance.AttendanceLevel : User.Instance.AttendanceLevel - 1;
@@ -220,6 +220,22 @@ public class UIMainLobbyAttendancePanelView : MonoBehaviour
             restPointText.text = $"{restPoint} / {GameData.MaxRestPoint}";
             restPointGaugeSlider.value = (float)(restPoint / GameData.MaxRestPoint);
             restPointRewardReceiveButton.interactable = restPoint >= GameData.MaxRestPoint;
+        }
+
+        if(GUILayout.Button("Day Up"))
+        {
+            GameData.DummyTime = GameData.DummyTime.AddDays(1);
+
+            Debug.Log(GameData.DummyTime.ToString());
+
+            User.Instance.OnValuesChange();
+        }
+
+        if (GUILayout.Button("Month Up"))
+        {
+            GameData.DummyTime = GameData.DummyTime.AddMonths(1);
+
+            User.Instance.OnValuesChange();
         }
     }
 #endif
