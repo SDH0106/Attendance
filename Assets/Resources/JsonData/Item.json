@@ -1,0 +1,74 @@
+[
+	{
+		"Id": "1400000001",
+		"Category": "0",
+		"IconId": "1600000001",
+		"Name": "아이템이름 1",
+		"Description": "아이템 설명1",
+		"QuantityGroupPer": "99"
+	},
+	{
+		"Id": "1400000002",
+		"Category": "0",
+		"IconId": "1600000002",
+		"Name": "아이템이름 1",
+		"Description": "아이템 설명2",
+		"QuantityGroupPer": "99"
+	},
+	{
+		"Id": "1400000003",
+		"Category": "0",
+		"IconId": "1600000003",
+		"Name": "아이템이름 3",
+		"Description": "아이템 설명3",
+		"QuantityGroupPer": "99"
+	},
+	{
+		"Id": "1400000004",
+		"Category": "0",
+		"IconId": "1600000004",
+		"Name": "아이템이름 4",
+		"Description": "아이템 설명4",
+		"QuantityGroupPer": "99"
+	},
+	{
+		"Id": "1400000005",
+		"Category": "0",
+		"IconId": "1600000005",
+		"Name": "아이템이름 5",
+		"Description": "아이템 설명5",
+		"QuantityGroupPer": "999"
+	},
+	{
+		"Id": "1400000006",
+		"Category": "0",
+		"IconId": "1600000006",
+		"Name": "아이템이름 6",
+		"Description": "아이템 설명6",
+		"QuantityGroupPer": "999"
+	},
+	{
+		"Id": "1400000007",
+		"Category": "0",
+		"IconId": "1600000007",
+		"Name": "아이템이름 7",
+		"Description": "아이템 설명7",
+		"QuantityGroupPer": "999"
+	},
+	{
+		"Id": "1400000008",
+		"Category": "0",
+		"IconId": "1600000008",
+		"Name": "아이템이름 8",
+		"Description": "아이템 설명8",
+		"QuantityGroupPer": "999"
+	},
+	{
+		"Id": "1400000009",
+		"Category": "0",
+		"IconId": "1600000009",
+		"Name": "아이템이름 9",
+		"Description": "아이템 설명9",
+		"QuantityGroupPer": "999"
+	}
+]

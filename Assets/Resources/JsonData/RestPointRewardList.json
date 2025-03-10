@@ -1,0 +1,27 @@
+[
+  {
+    "RewardItemIds": "1400000001",
+    "RewardAmounts": "1",
+    "EventCode": ""
+  },
+  {
+    "RewardItemIds": "1400000002",
+    "RewardAmounts": "10",
+    "EventCode": ""
+  },
+  {
+    "RewardItemIds": "1400000003",
+    "RewardAmounts": "3",
+    "EventCode": ""
+  },
+  {
+    "RewardItemIds": "1400000004",
+    "RewardAmounts": "5",
+    "EventCode": ""
+  },
+  {
+    "RewardItemIds": "1400000005",
+    "RewardAmounts": "1",
+    "EventCode": "christmas"
+  }
+]
